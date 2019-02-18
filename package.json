@@ -1,0 +1,16 @@
+{
+  "name": "iphone",
+  "version": "1.0.0",
+  "description": "Remade iphone web site using node.js jquery and bootstrap.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Nassim Hani Ikene",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

@@ -1,0 +1,330 @@
+html, body {
+	height: 100%;
+	background-color: #0A0A0A;
+	font-family: 'Roboto';
+}
+a {
+	color: #D9D9D9;
+	transition: 0.2s;
+}
+
+a:hover, .active {
+	color: #909090;
+	text-decoration: initial;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+nav {
+	background-color: #0A0A0A;
+}
+
+nav .container {
+	height: 48px;
+	max-width: 1080px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	color: #D9D9D9;
+	display: inline-block;
+	line-height: 48px;
+	padding: 0 2.8%;
+	font-size: 0.9rem;
+}
+
+nav li:hover {
+	color: #909090;
+	transition: .2s;
+}
+
+.fa-apple {
+	font-size: 1.2rem;
+	color: white;
+}
+
+#appear, #searchBar, #xButton {
+	display: none;
+}
+
+nav button {
+	color: #D9D9D9;
+	float: left;
+	background: none;
+	border: none;
+}
+
+.collapse-dropdown {
+	background-color: black;
+	height: 92.4%;
+	font-size: 1.1rem;
+	display: none;
+}
+.collapse-dropdown li {
+	border-bottom: #282828 solid 1px;
+	margin: 0 8%;
+	padding: 8px 0;
+	height: 40px;
+}
+.collapse-dropdown li:first-of-type {
+	margin: 0;
+	padding: 10px 8%;
+	height: 53px;
+}
+.collapse-dropdown input, #searchBar input {
+	display: inline-block;
+	height: 30px;
+	width: 80%;
+	background-color: #282828;
+	border: none;
+	border-radius: 0 3px 3px 0;
+	float: left;
+	color: white;
+}
+#searchBar input {
+ background-color: #0A0A0A;
+}
+
+#search-logo, #search-logo2 {
+	float: left;
+	height: 30px;
+	width: 30px;
+	background-color: #282828;
+	color: #888;
+	width: 50;
+	text-align: center;
+	border-radius: 3px 0 0 3px;
+	padding-top: 9px;
+	padding-right: 2px;
+	font-size: .9rem;
+}
+
+#search-logo2 {
+	background-color: #0A0A0A;
+}
+
+#searchBar {
+	padding-top: 8px;
+	margin-left: 8%;
+	width: 90%;
+}
+
+#xBtnSlide {
+	display: none;
+}
+
+/************ body ***************************************************************************/
+/*********** sectino 1 ***********************************************************************/
+
+section:first-of-type {
+	background-image: url("img/daniel-korpai-1160437-unsplash2.jpg");
+	height: 1000px;
+	width: 100%;
+	background-position: right;
+ 	background-size: cover;
+ 	margin-bottom: 30px;
+}
+
+h1, section:first-of-type h2 {
+	display: none;
+}
+
+h1 {
+	font-size: 10rem;
+	padding-top: 153px;
+	padding-left: 17%;
+}
+
+section:first-of-type h2:first-of-type {
+	padding-top: 10px;
+	padding-left: 20%;
+}
+
+section:first-of-type h2:nth-of-type(2) {
+	padding-left: 33%;
+}
+
+/*********** section 2 ***********************************************************************/
+
+section:nth-of-type(2) div:nth-of-type(2) {
+	background-color: #F2F2F2;
+	height: 30px;
+	width: 100%;
+}
+
+section:nth-of-type(2) div {
+	width: 100%;
+}
+
+section:nth-of-type(2) div[class="col-12"] {
+	position: relative;
+}
+
+.top-right h3 {
+	position: absolute;
+	top: 100px;
+	right: 4%;
+	color: white;
+	font-size: 2rem;
+	text-align: right;
+}
+
+section:nth-of-type(3) div:nth-of-type(2) {
+	background-color: #F2F2F2;
+	height: 60px;
+	width: 100%;
+}
+
+/*********** section 3 ***********************************************************************/
+
+section:nth-of-type(3) div {
+	width: 100%;
+}
+
+section:nth-of-type(3) div[class="col-12"] {
+	position: relative;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	color: white;
+	font-size: 2.95rem;
+}
+
+.shadow {
+	position: absolute;
+	background-color: rgba(0,0,0,0.15);
+	height: 100%;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.shadow:hover {
+	background-color: rgba(0,0,0,0.25);
+}
+/***** window size condition *****************************************************************/
+
+@media (max-width: 1014px) {
+	.top-right h3 {
+		top: 50px;
+		width: 100%;
+		text-align: center;
+		font-size: 1.5rem;
+		padding-left: 5.5%;
+	}
+}
+
+@media (max-width: 955px) {
+	h1 {
+		font-size: 8rem;
+		padding-top: 153px;
+		padding-left: 12%;
+	}
+
+	section:first-of-type h2:first-of-type {
+		padding-top: 30px;
+		padding-left: 16%;
+	}
+
+	section:first-of-type h2:nth-of-type(2) {
+		padding-top: 10px;
+		padding-left: 14%;
+	}
+}
+
+@media (max-width: 814px) {
+	.top-right h3 {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 750px) {
+	.disappear {
+		display: none;
+	}
+	#logo {
+		display: block;
+		margin-top: 3px;
+		width: 100%;
+		text-align: center
+	}
+
+	.fa-apple {
+	font-size: 1.5rem;
+	}
+
+	#appear {
+	display: block;
+	}
+	section:first-of-type {
+	background-image: url("img/daniel-korpai-1160437-unsplash.jpg");
+	height: 800px;
+	width: 100%;
+	background-position: center;
+ 	background-size: cover;
+ 	margin-bottom: 20px;
+ 	}
+
+ 	h1 {
+ 		font-size: 6rem;
+ 		padding-top: 125px;
+ 		padding-left: 18%;
+ 	}
+
+ 	section:first-of-type h2:first-of-type {
+ 		padding-top: 30px;
+ 		padding-left: 16%;
+ 	}
+
+ 	section:first-of-type h2:nth-of-type(2) {
+ 		padding-top: 10px;
+ 		padding-left: 14%;
+ 	}
+
+ 	section:nth-of-type(2) div:nth-of-type(2) {
+		height: 20px;
+	}
+
+ 	.top-right h3 {
+		top: 10px;
+		max-width: 500px;
+		right: 17%;
+	}
+
+	.center {
+		font-size: 2rem;
+	}
+
+	section:nth-of-type(3) div:nth-of-type(2) {
+		height: 40px;
+	}
+}
+
+@media (max-width: 610px) {
+	.top-right h3 {
+		top: 10px;
+		max-width: 500px;
+		right: 8%;
+	}
+}
+
+@media (max-width: 530px) {
+	.top-right h3 {
+		top: 10px;
+		max-width: 500px;
+		right: 4%;
+	}
+}
